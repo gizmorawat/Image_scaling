@@ -39,11 +39,11 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.readAndSave = void 0;
+exports.url_Image_Resizer = void 0;
 var sharp_1 = __importDefault(require("sharp"));
 var axios_1 = __importDefault(require("axios"));
 var uuid_1 = require("uuid");
-function readAndSave(url, width, height) {
+function url_Image_Resizer(url, width, height) {
     var _this = this;
     if (width === void 0) { width = 300; }
     if (height === void 0) { height = 300; }
@@ -78,7 +78,7 @@ function readAndSave(url, width, height) {
         console.log('error', error);
     });
 }
-exports.readAndSave = readAndSave;
+exports.url_Image_Resizer = url_Image_Resizer;
 function reject(error) {
     throw new Error('Function not implemented.');
 }
